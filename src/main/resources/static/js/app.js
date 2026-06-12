@@ -5,10 +5,12 @@ const stompClient = new StompJs.Client({
 stompClient.onConnect = (frame) => {
     setConnected(true);
     console.log('Connected: ' + frame);
-    stompClient.subscribe('/topic/greetings', (greeting) => {
-        showGreeting(JSON.parse(greeting.body).content);
-    });
+    stompClient.subscribe('/topic/greetings', onMessageGet);
 };
+
+function onMessageGet(message) {
+    showGreeting(JSON.parse(message.body).content);
+}
 
 stompClient.onWebSocketError = (error) => {
     console.error('Error with websocket', error);
