@@ -21,7 +21,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
   @Override
   public void registerStompEndpoints(StompEndpointRegistry registry) {
-    registry.addEndpoint("/gs-guide-websocket");
+    registry.addEndpoint("/admin-websocket");
   }
 
   public void setMessageBrokerTaskScheduler(@Lazy TaskScheduler taskScheduler) {
