@@ -41,14 +41,14 @@ public class TestControllet {
         return new Greeting("Hello, " + HtmlUtils.htmlEscape(message.getName()) + "!");
     }
 
-    @Scheduled(fixedRate = 1000)
-    public void scheduleFixedRateTask() {
-        System.out.println("Hello");
-        Greeting greeting = new Greeting("Hello, " + HtmlUtils.htmlEscape("message.getName()") + "!");
-        messagingTemplate.convertAndSend(
-                "/topic/greetings",
-                greeting
-        );
-    }
+    // @Scheduled(fixedRate = 1000)
+    // public void scheduleFixedRateTask() {
+    //     System.out.println("Hello");
+    //     Greeting greeting = new Greeting("Hello, " + HtmlUtils.htmlEscape("message.getName()") + "!");
+    //     messagingTemplate.convertAndSend(
+    //             "/topic/greetings",
+    //             greeting
+    //     );
+    // }
 
 }
