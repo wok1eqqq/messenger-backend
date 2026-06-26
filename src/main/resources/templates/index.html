@@ -10,10 +10,14 @@
     <title>Chat</title>
 
     <link rel="stylesheet" href="/css/home.css" th:href="@{/css/home.css}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7.0.0/bundles/stomp.umd.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </head>
 
 <nav class="navbar bg-white border-bottom px-3">
@@ -108,6 +112,9 @@
     </div>
 
     <script>
+
+
+
         const messages = document.getElementById("messages");
         messages.scrollTop = messages.scrollHeight;
 
@@ -154,7 +161,7 @@
         }
         function parseMessage(msg) {
             const messages = document.getElementById("messages");
-            
+
             const html = `
                     <div class="row pb-3">
 
@@ -180,6 +187,39 @@
             messages.insertAdjacentHTML("beforeend", html);
             messages.scrollTop = messages.scrollHeight;
         }
+        const stompClient = new StompJs.Client({
+            brokerURL: 'ws://26.245.198.204:8080/admin-websocket',
+        });
+        stompClient.activate();
+        stompClient.onConnect = (frame) => {
+
+
+            console.log('Connected: ' + frame);
+
+
+            stompClient.subscribe('/topic/greetings', (message) => {
+                console.log(message.body)
+                console.log(JSON.parse(message.body).message)
+                 Toastify({
+                    avatar: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+                    text: JSON.parse(message.body).message,
+                    duration: 3000,
+                    close: false,
+                    gravity: "bottom", // `top` or `bottom`
+                    position: "right", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                        background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    },
+                    onClick: function () { } // Callback after click
+                }).showToast()
+            
+            });
+
+
+
+        };
+
     </script>
 </body>
 

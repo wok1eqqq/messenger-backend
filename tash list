@@ -1,0 +1,28 @@
+[33m09bc9d3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mrecovery[m[33m)[m HEAD@{0}: reset: moving to recovery
+[33m8edb02a[m HEAD@{1}: checkout: moving from recovery to main
+[33m09bc9d3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mrecovery[m[33m)[m HEAD@{2}: commit: restore project to working version
+[33m6f7e5a1[m[33m ([m[1;32mlatest-work[m[33m, [m[1;32mappmod/java-upgrade-20260625232626[m[33m)[m HEAD@{3}: checkout: moving from 6f7e5a1dcd6ce87aaf44e376f6a9309eb764c697 to recovery
+[33m6f7e5a1[m[33m ([m[1;32mlatest-work[m[33m, [m[1;32mappmod/java-upgrade-20260625232626[m[33m)[m HEAD@{4}: checkout: moving from main to 6f7e5a1
+[33m8edb02a[m HEAD@{5}: reset: moving to HEAD
+[33m8edb02a[m HEAD@{6}: checkout: moving from 6f7e5a1dcd6ce87aaf44e376f6a9309eb764c697 to main
+[33m6f7e5a1[m[33m ([m[1;32mlatest-work[m[33m, [m[1;32mappmod/java-upgrade-20260625232626[m[33m)[m HEAD@{7}: checkout: moving from main to 6f7e5a1
+[33m8edb02a[m HEAD@{8}: commit (cherry-pick): my work on wrong branch
+[33m2496554[m HEAD@{9}: checkout: moving from latest-work to main
+[33m6f7e5a1[m[33m ([m[1;32mlatest-work[m[33m, [m[1;32mappmod/java-upgrade-20260625232626[m[33m)[m HEAD@{10}: checkout: moving from 6f7e5a1dcd6ce87aaf44e376f6a9309eb764c697 to latest-work
+[33m6f7e5a1[m[33m ([m[1;32mlatest-work[m[33m, [m[1;32mappmod/java-upgrade-20260625232626[m[33m)[m HEAD@{11}: checkout: moving from da1b3a7775af18d0b499555c97a36d31dbb000ab to 6f7e5a1
+[33mda1b3a7[m HEAD@{12}: checkout: moving from 6f7e5a1dcd6ce87aaf44e376f6a9309eb764c697 to da1b3a7
+[33m6f7e5a1[m[33m ([m[1;32mlatest-work[m[33m, [m[1;32mappmod/java-upgrade-20260625232626[m[33m)[m HEAD@{13}: checkout: moving from da1b3a7775af18d0b499555c97a36d31dbb000ab to 6f7e5a1
+[33mda1b3a7[m HEAD@{14}: checkout: moving from 6f7e5a1dcd6ce87aaf44e376f6a9309eb764c697 to da1b3a7
+[33m6f7e5a1[m[33m ([m[1;32mlatest-work[m[33m, [m[1;32mappmod/java-upgrade-20260625232626[m[33m)[m HEAD@{15}: checkout: moving from da1b3a7775af18d0b499555c97a36d31dbb000ab to 6f7e5a1
+[33mda1b3a7[m HEAD@{16}: checkout: moving from 6f7e5a1dcd6ce87aaf44e376f6a9309eb764c697 to da1b3a7
+[33m6f7e5a1[m[33m ([m[1;32mlatest-work[m[33m, [m[1;32mappmod/java-upgrade-20260625232626[m[33m)[m HEAD@{17}: checkout: moving from main to 6f7e5a1
+[33m2496554[m HEAD@{18}: reset: moving to HEAD
+[33m2496554[m HEAD@{19}: checkout: moving from appmod/java-upgrade-20260625232626 to main
+[33m6f7e5a1[m[33m ([m[1;32mlatest-work[m[33m, [m[1;32mappmod/java-upgrade-20260625232626[m[33m)[m HEAD@{20}: commit: my work on wrong branch
+[33m2e4e1ff[m HEAD@{21}: commit: Step 4: Final Validation - Compile: SUCCESS, Tests: 1/1 passed
+[33mda1b3a7[m HEAD@{22}: commit: Step 3: Update Java Version in pom.xml - Compile: SUCCESS
+[33m2496554[m HEAD@{23}: checkout: moving from main to appmod/java-upgrade-20260625232626
+[33m2496554[m HEAD@{24}: pull --tags origin main: Fast-forward
+[33m0675da0[m HEAD@{25}: checkout: moving from main to main
+[33m0675da0[m HEAD@{26}: commit: remove sensitive data
+[33m58cc8c4[m HEAD@{27}: commit (initial): first commit
